@@ -6,12 +6,8 @@
 
 #if defined WINDOWS
 #include <direct.h>
-const char* inputPath  = strcat(_getcwd(NULL, 0), "\\input.txt");
-const char* outputPath = strcat(_getcwd(NULL, 0), "\\output.txt");
 #else
 #include <unistd.h>
-const char* inputPath  = strcat(getcwd(NULL, 0), "/input.txt");
-const char* outputPath = strcat(getcwd(NULL, 0), "/output.txt");
 #endif
 
 #define SIZE 10240
